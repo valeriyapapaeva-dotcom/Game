@@ -27,37 +27,37 @@ font_large = pygame.font.SysFont('arial', 50)
 
 # Загрузка изображений и звуков
 try:
-    player_img = pygame.image.load('player.png')
+    player_img = pygame.image.load('Sound_and_Visual/player.png')
     player_img = pygame.transform.scale(player_img, (80, 80))
 except:
     player_img = pygame.Surface((80, 80))
     player_img.fill(GREEN)
 
 try:
-    asteroid_img = pygame.image.load('asteroid.png')
+    asteroid_img = pygame.image.load('Sound_and_Visual/asteroid.png')
     asteroid_img = pygame.transform.scale(asteroid_img, (50, 50))
 except:
     asteroid_img = pygame.Surface((50, 50))
     asteroid_img.fill(RED)
 
 try:
-    bullet_img = pygame.image.load('bullet.png')
+    bullet_img = pygame.image.load('Sound_and_Visual/bullet.png')
     bullet_img = pygame.transform.scale(bullet_img, (20, 30))
 except:
     bullet_img = pygame.Surface((10, 20))
     bullet_img.fill(YELLOW)
 
 try:
-    background_img = pygame.image.load('background.png')
+    background_img = pygame.image.load('Sound_and_Visual/background.png')
     background_img = pygame.transform.scale(background_img, (WIDTH, HEIGHT))
 except:
     background_img = pygame.Surface((WIDTH, HEIGHT))
     background_img.fill(BLACK)
 
 try:
-    explosion_sound = mixer.Sound('explosion.wav')
-    shoot_sound = mixer.Sound('shoot.wav')
-    mixer.music.load('background.mp3')
+    explosion_sound = mixer.Sound('Sound_and_Visual/explosion.wav')
+    shoot_sound = mixer.Sound('Sound_and_Visual/shoot.wav')
+    mixer.music.load('Sound_and_Visual/background.mp3')
     mixer.music.play(-1)
     mixer.music.set_volume(0.5)
 except:
